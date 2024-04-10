@@ -1,0 +1,37 @@
+.row{
+    background:red;
+    height: 10vh;
+}
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90vh;
+    width: 10vh;
+    background-color: aqua;
+}
+
+.top-bar{
+    width: 95vw;
+    height: 10vh;
+    background-color: blue;
+    position: absolute;
+    top: 58px;
+    left: 59px;
+}
+
+.plan{
+    width: 95vw;
+    height: 79vh;
+    overflow: auto;
+    background-color: yellowgreen;
+    position: absolute;
+    top: 116px;
+    left: 59px;
+}
+
+.class-plan{
+    display: flex;
+    justify-content: space-between;
+}
