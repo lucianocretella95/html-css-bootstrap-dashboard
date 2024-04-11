@@ -64,8 +64,8 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-2 p-0">
-            <div class="sidebar">
-              <div class="features">
+            <div class="sidebar d-flex flex-column justify-content-between p-1">
+              <div class="features d-flex flex-column">
                 <span><i class="fa-solid fa-house"></i>Home</span>
                 <span><i class="fa-solid fa-chart-simple"></i>Stats</span>
                 <span><i class="fa-solid fa-signal"></i>Signal</span>
@@ -119,18 +119,201 @@
               <div class="menù">
                 <div class="col-7">
                   <div class="next-class">
-                    <div class="col-8">prossime classi</div>
+                    <div class="col-7 p-1">
+                      <h5 style="background-color: #f7f7f7">Prossime classi</h5>
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>@twitter</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
                   </div>
                   <div class="faq">
-                    <div class="col-4">faq</div>
+                    <div class="col-5 p-1">
+                      <h5 style="background-color: #f7f7f7">F.A.Q.</h5>
+                      <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button
+                              class="accordion-button"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#collapseOne"
+                              aria-expanded="true"
+                              aria-controls="collapseOne"
+                            >
+                              Accordion Item #1
+                            </button>
+                          </h2>
+                          <div
+                            id="collapseOne"
+                            class="accordion-collapse collapse show"
+                            data-bs-parent="#accordionExample"
+                          >
+                            <div class="accordion-body">
+                              <strong
+                                >This is the first item's accordion
+                                body.</strong
+                              >
+                              It is shown by default, until the collapse plugin
+                              adds the appropriate classes that we use to style
+                              each element. These classes control the overall
+                              appearance, as well as the showing and hiding via
+                              CSS transitions. You can modify any of this with
+                              custom CSS or overriding our default variables.
+                              It's also worth noting that just about any HTML
+                              can go within the <code>.accordion-body</code>,
+                              though the transition does limit overflow.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button
+                              class="accordion-button collapsed"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#collapseTwo"
+                              aria-expanded="false"
+                              aria-controls="collapseTwo"
+                            >
+                              Accordion Item #2
+                            </button>
+                          </h2>
+                          <div
+                            id="collapseTwo"
+                            class="accordion-collapse collapse"
+                            data-bs-parent="#accordionExample"
+                          >
+                            <div class="accordion-body">
+                              <strong
+                                >This is the second item's accordion
+                                body.</strong
+                              >
+                              It is hidden by default, until the collapse plugin
+                              adds the appropriate classes that we use to style
+                              each element. These classes control the overall
+                              appearance, as well as the showing and hiding via
+                              CSS transitions. You can modify any of this with
+                              custom CSS or overriding our default variables.
+                              It's also worth noting that just about any HTML
+                              can go within the <code>.accordion-body</code>,
+                              though the transition does limit overflow.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button
+                              class="accordion-button collapsed"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#collapseThree"
+                              aria-expanded="false"
+                              aria-controls="collapseThree"
+                            >
+                              Accordion Item #3
+                            </button>
+                          </h2>
+                          <div
+                            id="collapseThree"
+                            class="accordion-collapse collapse"
+                            data-bs-parent="#accordionExample"
+                          >
+                            <div class="accordion-body">
+                              <strong
+                                >This is the third item's accordion
+                                body.</strong
+                              >
+                              It is hidden by default, until the collapse plugin
+                              adds the appropriate classes that we use to style
+                              each element. These classes control the overall
+                              appearance, as well as the showing and hiding via
+                              CSS transitions. You can modify any of this with
+                              custom CSS or overriding our default variables.
+                              It's also worth noting that just about any HTML
+                              can go within the <code>.accordion-body</code>,
+                              though the transition does limit overflow.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div class="col-5">
-                  <div class="todo">
-                    <div class="col-4">todo</div>
+                  <div class="todo" style="font-size: 0.7rem;">
+                    <div class="col-4">
+                      <h5 style="background-color: #f7f7f7">Todo</h5>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="flexRadioDefault"
+                          id="flexRadioDefault1"
+                        />
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          Kikoff nuove classi
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="flexRadioDefault"
+                          id="flexRadioDefault1"
+                        />
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          Lezione su Bootstrap 5 classe #75
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="flexRadioDefault"
+                          id="flexRadioDefault1"
+                        />
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          Controllare Username github studenti
+                        </label>
+                      </div>
+                    </div>
                   </div>
-                  <div class="grafic">
-                    <div class="col-8">grafic</div>
+                  <div class="grafic" style="font-size: 0.7rem;">
+                    <div class="col-8">
+                      <div class="immage">
+                        <img src="./screenshots/img/img/stats.jpeg" alt="">
+                      </div>
+                      <ul>Utenti Attivi</ul>
+                      <li>Gennaio: 1200</li>
+                      <li>Febbraio: 800</li>
+                      <li>Marzo: 1500</li>
+                    </div>
                   </div>
                 </div>
               </div>
